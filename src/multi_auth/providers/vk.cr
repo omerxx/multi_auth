@@ -99,8 +99,7 @@ class MultiAuth::Provider::Vk < MultiAuth::Provider
       secret,
       redirect_uri: redirect_uri,
       authorize_uri: "/authorize",
-      token_uri: "/access_token",
-      auth_scheme: :request_body
+      token_uri: "/access_token"
     )
   end
 end

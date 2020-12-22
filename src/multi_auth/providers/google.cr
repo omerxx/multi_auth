@@ -27,8 +27,7 @@ class MultiAuth::Provider::Google < MultiAuth::Provider
       key,
       secret,
       token_uri: "/oauth2/v4/token",
-      redirect_uri: redirect_uri,
-      auth_scheme: :request_body
+      redirect_uri: redirect_uri
     )
 
     access_token = client.get_access_token_using_authorization_code(params["code"])

@@ -75,8 +75,7 @@ class MultiAuth::Provider::Facebook < MultiAuth::Provider
       key,
       secret,
       redirect_uri: redirect_uri,
-      token_uri: "/v2.9/oauth/access_token",
-      auth_scheme: :request_body
+      token_uri: "/v2.9/oauth/access_token"
     )
   end
 end
